@@ -1,5 +1,5 @@
 <script>
-import KillerCard from "./KillerCard.vue";
+import KillerCard from "../killers/KillerCard.vue";
 
 export default {
   name: "KillerList",
@@ -9,5 +9,5 @@ export default {
 </script>
 
 <template>
-  <KillerCard></KillerCard>
+  <KillerCard v-for="killer in killers" :key="killer.id" :killer="killer"></KillerCard>
 </template>

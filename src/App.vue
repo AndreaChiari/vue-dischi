@@ -9,7 +9,5 @@ export default {
 </script>
 <template>
   <AppHeader></AppHeader>
-  <main class="container">
-    <RouterView></RouterView>
-  </main>
+  <RouterView></RouterView>
 </template>
