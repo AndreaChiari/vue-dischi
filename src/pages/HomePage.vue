@@ -1,12 +1,25 @@
 <script>
-import DetailPage from './DetailPage.vue';
+import axios from "axios";
+const ApiBaseUri = "http://localhost:8000/api";
 export default {
-    name: 'HomePage',
-    components: { DetailPage }
+  name: "HomePage",
+  components: {},
+  data: () => ({
+    killers: [],
+  }),
+  methods: {
+    fetchProjects() {
+      axios.get(ApiBaseUri + "/killers").then((res) => {
+        this.killers = res.data;
+      });
+    },
+  },
+  // created() {
+  //   this.fetchProjects();
+  // },
 };
-
 </script>
 
 <template>
-    <detail-page></detail-page>
+  <h1>Home page</h1>
 </template>
