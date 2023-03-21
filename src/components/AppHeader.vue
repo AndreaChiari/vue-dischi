@@ -47,6 +47,14 @@ export default {
           >
         </li>
       </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <router-link class="nav-link text-white" :to="{ name: 'ContactPage' }"
+            >Contatti</router-link
+          >
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
