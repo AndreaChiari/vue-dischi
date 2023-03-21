@@ -27,8 +27,7 @@ export default {
           >
         </li>
       </ul>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
+
       <ul class="navbar-nav">
         <li class="nav-item active">
           <router-link

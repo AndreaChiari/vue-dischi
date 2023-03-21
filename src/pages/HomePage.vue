@@ -1,11 +1,9 @@
 <script>
 import axios from "axios";
-import AppKillers from "../killers/AppKillers.vue";
-import KillerCard from "../killers/KillerCard.vue";
 const ApiBaseUri = "http://localhost:8000/api";
 export default {
   name: "HomePage",
-  components: { AppKillers, KillerCard },
+  components: {},
   data: () => ({
     killers: [],
   }),
@@ -23,6 +21,5 @@ export default {
 </script>
 
 <template>
-  <AppKillers></AppKillers>
-  <KillerCard></KillerCard>
+  <h1>Home page</h1>
 </template>

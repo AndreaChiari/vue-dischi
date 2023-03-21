@@ -9,6 +9,5 @@ export default {
 </script>
 
 <template>
-  <KillerCard v-for="killer in killers" :key="killer.id" :killer="killer">
-  </KillerCard>
+  <KillerCard></KillerCard>
 </template>
