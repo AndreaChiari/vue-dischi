@@ -2,9 +2,11 @@
 import DetailPage from './DetailPage.vue';
 export default {
     name: 'HomePage',
-    components: {}
+    components: { DetailPage }
 };
 
 </script>
 
-<template></template>
+<template>
+    <detail-page></detail-page>
+</template>
