@@ -1,43 +1,60 @@
 <script>
+import axios from "axios";
+import KillerCard from "../killers/KillerCard.vue";
+const ApiBaseUri = "http://localhost:8000/api";
 export default {
   name: "DetailPage",
+  data: () => ({
+    killer: null,
+  }),
+  components: { KillerCard },
+  methods: {
+    getKiller() {
+      axios.get(ApiBaseUri + "/killers/" + this.$route.params.id).then((res) => {
+        this.killer = res.data;
+      });
+    },
+  },
+  created() {
+    this.getKiller();
+  },
+
 };
 </script>
 
 <template>
-  <div class="bg-detail">
+  <killer-card v-if="killer" :killer="killer" :isDetail="true"></killer-card>
+<!-- <div class="bg-detail">
     <div class="container d-flex justify-content-center align-items-center">
       <div class="card mt-5 mb-5">
-        <img
-          class="card-img-top"
+        <img class="card-img-top"
           src="https://upload.wikimedia.org/wikipedia/en/0/0c/Jeffrey_Dahmer_Milwaukee_Police_1991_mugshot.jpg"
-          alt="Card image cap"
-        />
+          alt="Card image cap" />
         <div class="card-body">
-          <div class="d-flex info-detail">
-            <h5 class="card-title me-2">Name:</h5>
-            <p class="card-text">Jeffrey</p>
-          </div>
-          <div class="d-flex info-detail">
-            <h5 class="card-title me-2">Morto:</h5>
-            <p class="card-text">Dahmer</p>
-          </div>
-          <div class="d-flex info-detail">
-            <h5 class="card-title me-2">Age:</h5>
-            <p class="card-text">56</p>
-          </div>
-          <div class="d-flex info-detail">
-            <h5 class="card-title me-2">Kills:</h5>
-            <i class="fa-solid fa-skull"></i>
-          </div>
-          <div class="d-flex info-detail">
-            <h5 class="card-title me-2">Wanted:</h5>
-            <p class="card-text">no</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                            <div class="d-flex info-detail">
+                              <h5 class="card-title me-2">Name:</h5>
+                              <p class="card-text">Jeffrey</p>
+                            </div>
+                            <div class="d-flex info-detail">
+                              <h5 class="card-title me-2">Morto:</h5>
+                              <p class="card-text">Dahmer</p>
+                            </div>
+                            <div class="d-flex info-detail">
+                              <h5 class="card-title me-2">Age:</h5>
+                              <p class="card-text">56</p>
+                            </div>
+                            <div class="d-flex info-detail">
+                              <h5 class="card-title me-2">Kills:</h5>
+                              <i class="fa-solid fa-skull"></i>
+                            </div>
+                            <div class="d-flex info-detail">
+                              <h5 class="card-title me-2">Wanted:</h5>
+                              <p class="card-text">no</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
 </template>
 
 <style lang="scss" scoped>

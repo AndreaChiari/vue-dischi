@@ -1,23 +1,7 @@
 <script>
-import axios from "axios";
-import KillerPage from "./KillerPage.vue";
-const ApiBaseUri = "http://localhost:8000/api";
 export default {
   name: "HomePage",
-  components: { KillerPage },
-  data: () => ({
-    killers: [],
-  }),
-  methods: {
-    fetchKillers() {
-      axios.get(ApiBaseUri + "/killers").then((res) => {
-        this.killers = res.data;
-      });
-    },
-  },
-  created() {
-    this.fetchKillers();
-  },
+
 };
 </script>
 
@@ -26,7 +10,6 @@ export default {
     <div class="container">
       <h1 class="text-center pt-5 text-white">KILLERS WEBSITE</h1>
     </div>
-    <KillerPage :killers="killers"></KillerPage>
   </div>
 </template>
 

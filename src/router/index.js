@@ -2,15 +2,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import HomePage from "../pages/HomePage.vue";
+import ContactPage from "../pages/ContactPage.vue";
 import DetailPage from "../pages/DetailPage.vue";
-import Appkillers from "../killers/Appkillers.vue";
+import KillerPage from "../pages/KillerPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", name: "home", component: HomePage },
-    { path: "/killers/detail", name: "killers-detail", component: DetailPage },
-    { path: "/killers", name: "killersCards", component: Appkillers },
+    { path: '/contact', name: 'contact', component: ContactPage},
+    { path: "/killers/:id", name: "killer-detail", component: DetailPage },
+    { path: "/killers", name: "killersPage", component: KillerPage },
   ],
 });
 
