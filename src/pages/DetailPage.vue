@@ -33,7 +33,7 @@ export default {
 <template>
   <div class="card-killer-container">
     <div v-if="killer" :killer="killer" :isDetail="true"
-      class="container d-flex justify-content-center align-items-center mt-5">
+      class="container d-flex justify-content-center align-items-center pt-5">
       <div class="card-killer d-flex">
         <div class="card-killer-img">
           <img :src="killer.picture" :alt="killer.first_name">
@@ -70,6 +70,7 @@ export default {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZv_rtv9B9ch5Mq2IhErNGdYdGkD58D0V6eg&usqp=CAU);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 i {
