@@ -24,9 +24,19 @@ export default {
 </script>
 
 <template>
-  <main class="container py-4">
-    <div class="row g-4">
-      <KillerCard v-for="killer in killers" :key="killer.id" :killer="killer"></KillerCard>
+  <main>
+    <div class="container py-4">
+      <div class="row g-4">
+        <KillerCard v-for="killer in killers" :key="killer.id" :killer="killer"></KillerCard>
+      </div>
     </div>
   </main>
 </template>
+<style lang="scss" scoped>
+main {
+  background-image: url(https://as2.ftcdn.net/v2/jpg/01/63/20/53/1000_F_163205363_5YgJBWSKY0dbO4ESsGuLpJDQOH3xlg3g.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+

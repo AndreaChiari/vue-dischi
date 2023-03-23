@@ -7,7 +7,6 @@ export default {
 <template>
   <div class="container">
     <h1 class="my-4">Contatti</h1>
-
     <form novalidate>
       <div class="row">
         <div class="mb-3 col">
@@ -24,11 +23,8 @@ export default {
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-
         <button type="submit" class="btn btn-primary col-1">invia</button>
       </div>
     </form>

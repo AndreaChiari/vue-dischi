@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
 // generals
 .card-killer-container {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZv_rtv9B9ch5Mq2IhErNGdYdGkD58D0V6eg&usqp=CAU);
+  background-image: url(https://as1.ftcdn.net/v2/jpg/03/41/86/46/1000_F_341864670_m3ehgvYGSCoPIzcbx6ZaAXqf5OZPxF4a.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
