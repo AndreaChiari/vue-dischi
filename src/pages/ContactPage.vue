@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1 class="my-4">Contatti</h1>
+    <h1 class="my-4">Contacts</h1>
 
     <form novalidate>
       <div class="row">
@@ -15,19 +15,19 @@ export default {
           <input type="email" class="form-control" id="email" name="email" />
         </div>
         <div class="mb-3 col-6">
-          <label for="subject" class="form-label">Oggetto</label>
+          <label for="subject" class="form-label">Subject</label>
           <input type="email" class="form-control" name="subject" />
         </div>
         <div class="mb-3 col-12">
-          <label class="form-label">testo</label>
+          <label class="form-label">Text Us!</label>
           <textarea class="col-12 form-control" name="" id=""></textarea>
         </div>
         <div class="mb-3 col-6">
           <input type="checkbox" class="form-check-input me-2" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <label class="form-check-label" for="exampleCheck1">Subscribe</label>
         </div>
         <div>
-          <button type="submit" class="btn btn-primary col-1">invia</button>
+          <button type="submit" class="btn btn-primary col-1">Submit</button>
         </div>
       </div>
     </form>
