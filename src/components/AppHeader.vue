@@ -33,3 +33,9 @@ export default {
     </div>
   </nav>
 </template>
+
+<style lang="scss" scoped>
+nav {
+  height: 60px;
+}
+</style>
