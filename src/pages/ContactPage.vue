@@ -11,15 +11,15 @@ export default {
     <form novalidate>
       <div class="row">
         <div class="mb-3 col-6">
-          <label for="email" class="form-label">Email address</label>
+          <label for="email" class="form-label">Email address<sup class="text-danger">*</sup></label>
           <input type="email" class="form-control" id="email" name="email" />
         </div>
         <div class="mb-3 col-6">
-          <label for="subject" class="form-label">Subject</label>
+          <label for="subject" class="form-label">Subject<sup class="text-danger">*</sup></label>
           <input type="email" class="form-control" name="subject" />
         </div>
         <div class="mb-3 col-12">
-          <label class="form-label">Text Us!</label>
+          <label class="form-label">Text Us!<sup class="text-danger">*</sup></label>
           <textarea class="col-12 form-control" name="" id=""></textarea>
         </div>
         <div class="mb-3 col-6">
