@@ -31,7 +31,7 @@ export default {
 </script>
 
 <template>
-  <div class="card-killer-container">
+  <div class="card-killer-container d-flex align-items-center justify-content-center">
     <div v-if="killer" :killer="killer" :isDetail="true"
       class="container d-flex justify-content-center align-items-center pt-5">
       <div class="card-killer d-flex">
@@ -70,7 +70,7 @@ export default {
   background-image: url(https://as1.ftcdn.net/v2/jpg/03/41/86/46/1000_F_341864670_m3ehgvYGSCoPIzcbx6ZaAXqf5OZPxF4a.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 60px);
 }
 
 i {
